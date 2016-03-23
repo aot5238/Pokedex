@@ -6,6 +6,8 @@
 package pokedex;
 
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
@@ -13,7 +15,7 @@ import javax.swing.JPanel;
  *
  * @author aot5238
  */
-public class PokePanel extends JPanel
+public class PokePanel extends JPanel implements ActionListener
 {
     JButton next, previous;
     PokeImage pi;
@@ -28,8 +30,14 @@ public class PokePanel extends JPanel
         pi = new PokeImage();
         add(pi);
         
-        add(next);
         add(previous);
+        add(next);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) 
+    {
+        
     }
     
     

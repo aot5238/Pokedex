@@ -27,7 +27,7 @@ public class PokeImage extends JPanel
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g);
-        ImageIcon Icon = new ImageIcon("images/pika.png");
+        ImageIcon Icon = new ImageIcon();
         g.drawImage(Icon.getImage(), 0, 0, this);
         
     }
