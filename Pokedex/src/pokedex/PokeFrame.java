@@ -25,9 +25,9 @@ public class PokeFrame extends JFrame
         
         pack();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-        setSize(550,850);
+        setSize(350,850);
         setVisible(true);
+        setLocationRelativeTo(null);        
     }
     
 }
